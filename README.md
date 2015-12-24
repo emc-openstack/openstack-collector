@@ -28,13 +28,13 @@ To run this tool, two python modules are required:
 
 ## What can be collected
 
-* nodes' information: cpu, memory, iscsi, fc, operation system, multipath, network, etc
+* nodes' information: cpu, memory, iscsi, fc, operating system, multipath, network, etc
 * OpenStack log files
 * OpenStack configuration files
 
 ## Usage
 
-        python openstack_collect.py --config-file env.conf
+        python openstack_collector.py --config-file env.conf
 
 ## Configuration
 
@@ -45,7 +45,7 @@ Here is an example of the configuration file:
         nodes = node1, node2
         # The default value of storage directory is ./
         #storage_dir = ./
-        
+
         [node1]
         ip = 192.168.1.181
         user = stack
@@ -59,7 +59,7 @@ Here is an example of the configuration file:
         # The directories of log files
         # which you want to collect.
         log_dirs = /var/log/cinder, /var/log/nova
-        
+
         [node2]
         ip = 192.168.1.182
         user = stack
